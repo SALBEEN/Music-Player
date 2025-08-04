@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Classic Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="player">
+        <h2 id="current-title">No song playing</h2>
+
+        <div id="progress-container">
+          <div id="progress"></div>
+        </div>
+
+        <div class="time-info">
+          <span id="current-time">00:00</span>
+          <span id="duration">00:00</span>
+        </div>
+
+        <div id="playlist"></div>
+
+        <div class="controls">
+          <button id="prev" onclick="PlayPrevious()">Previous</button>
+          <button id="play-pause" onclick="PauseAudio()">Play</button>
+          <button id="next" onclick="PlayNext()">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
